@@ -1,12 +1,197 @@
-html {background-color: #F8F9FA; scroll-behavior: smooth;}
-section {margin-bottom: 100px; max-width: 100%; box-sizing: border-box;}
-header {text-decoration: none; display: flex; justify-content: space-between; list-style: none; gap: 3.125rem; color: #495057; font-size: 1.5625rem;  max-width: 100%; box-sizing: border-box;}
-.Hi {color: #CED4DA; font-size: 10.9375rem; text-align: center; font-family: 'inter', sans-serif ; align-items: center;}
-.about-me, .skills {display: flex; justify-content: space-between; gap: 100px;}
-.bold {font-size: 8rem; font-family: 'inter', sans-serif; color: #CED4DA;}
-.description {font-family: 'inter', sans-serif; font-size: 2rem;}
-.hover {display: flex; font-family:  'inter', sans-serif; font-size: 3.125rem; justify-content: right; margin-bottom: 3.125rem; color: #495057;}
-.hover2 { font-family: 'inter', sans-serif; font-size: 3.125rem;; margin-bottom: 3.125rem; color: #495057;}
-.social-icons {display: flex;justify-content: center; gap:2.6875rem; font-size: 1.25rem;}
-.Contact {margin-bottom: 25px; color: #CED4DA; font-size: 10.9375rem; text-align: center; font-family: 'inter', sans-serif ; align-items: center;}
-a {text-decoration: none; color: #495057;}
+html {
+    background-color: #F8F9FA;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 6.25rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+header {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1.5rem;
+    color: #495057;
+    font-size: 1.25rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.Hi {
+    color: #CED4DA;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.Contact {
+    margin-bottom: 1.5rem;
+    color: #CED4DA;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    line-height: 1;
+}
+
+.about-me,
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;}
+
+.bold {
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+    color: #CED4DA;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.1rem; 
+    text-align: center;
+}
+
+.hover {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #495057;
+}
+
+.hover2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #495057;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #495057;
+}
+
+/* --- Media Queries for Larger Screens --- */
+
+/* Small devices (tablets, 640px and up) */
+@media (min-width: 640px) {
+    header {
+        gap: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .Hi, .Contact {
+        font-size: 6rem; /* Increase for tablets */
+    }
+
+    .bold {
+        font-size: 5rem; /* Increase for tablets */
+    }
+
+    .description {
+        font-size: 1.5rem;
+    }
+
+    .hover, .hover2 {
+        font-size: 2.25rem;
+    }
+
+    .social-icons {
+        gap: 2rem;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        gap: 3.125rem; /* Original gap */
+        font-size: 1.5625rem; /* Original font size */
+    }
+
+    .Hi, .Contact {
+        font-size: 8rem; /* Closer to original for medium screens */
+    }
+
+    .about-me,
+    .skills {
+        flex-direction: row; /* Back to original horizontal layout */
+        gap: 6.25rem; /* Converted from 100px */
+        justify-content: space-between;
+        padding: 0 2rem; /* More padding for larger screens */
+    }
+
+    .bold {
+        font-size: 6rem; /* Closer to original */
+        text-align: left; /* Align left for desktop */
+    }
+
+    .description {
+        font-size: 2rem; /* Original font size */
+        text-align: left; /* Align left for desktop */
+    }
+
+    .hover {
+        font-size: 3.125rem; /* Original font size */
+        justify-content: right; /* Original alignment */
+        margin-bottom: 3.125rem; /* Original margin */
+    }
+
+    .hover2 {
+        font-size: 3.125rem; /* Original font size */
+        margin-bottom: 3.125rem; /* Original margin */
+        text-align: left; /* Align left for desktop */
+    }
+
+    .social-icons {
+        gap: 2.6875rem; /* Original gap */
+    }
+}
+
+/* Large devices (large desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .Hi, .Contact {
+        font-size: 10.9375rem; /* Full original size */
+    }
+
+    .bold {
+        font-size: 8rem; /* Full original size */
+    }
+}
+
+/* Max width for content to prevent it from becoming too wide on very large screens */
+@media (min-width: 1200px) {
+    section {
+        max-width: 1200px; /* Example max-width */
+        margin-left: auto;
+        margin-right: auto; /* Center sections on very large screens */
+        padding: 0; /* Remove horizontal padding if max-width is applied and centered */
+    }
+}
